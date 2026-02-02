@@ -328,24 +328,14 @@
     position: relative;
 }
 
-.about-img::before,
-.about-img::after {
-    position: absolute;
-    content: "";
-    width: 33%;
-    height: 90px;
-    background: var(--bs-white);
+.about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
-.about-img::before {
-    top: 0px;
-    left: 0px;
-}
-
-.about-img::after {
-    right: 0px;
-    bottom: 0px;
-}
+/* Removed ::before and ::after pseudo-elements to show full image */
 
 
 /*** Service ***/
